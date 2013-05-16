@@ -292,7 +292,7 @@ DokanCreateGlobalDiskDevice(
 				FILE_DEVICE_UNKNOWN,// DeviceType
 				0,					// DeviceCharacteristics
 				FALSE,				// Not Exclusive
-				&SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RW_RES_R, // Default SDDL String
+				&SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX, // Default SDDL String
 				NULL,				// Device Class GUID
 				&deviceObject);		// DeviceObject
 
@@ -438,7 +438,7 @@ DokanCreateDiskDevice(
 					FILE_DEVICE_DISK,	// DeviceType
 					DeviceCharacteristics,	// DeviceCharacteristics
 					FALSE,				// Not Exclusive
-					&SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RW_RES_R, // Default SDDL String
+					&SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX, // Default SDDL String
 					NULL,				// Device Class GUID
 					&diskDeviceObject); // DeviceObject
 	} else {
@@ -508,7 +508,7 @@ DokanCreateDiskDevice(
 				DeviceType,			// DeviceType
 				DeviceCharacteristics,	// DeviceCharacteristics
 				FALSE,				// Not Exclusive
-				&SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RW_RES_R, // Default SDDL String
+				&SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX, // Default SDDL String
 				NULL,				// Device Class GUID
 				&fsDeviceObject);	// DeviceObject
 
